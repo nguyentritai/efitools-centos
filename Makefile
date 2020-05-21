@@ -22,8 +22,9 @@ build-sbsigntools:
 build-efitools:
 		git clone git://git.kernel.org/pub/scm/linux/kernel/git/jejb/efitools.git
 		make -C efitools
-		mv efitools/mkusb.sh efitools/efitool-mkusb
+		cp efitools/mkusb.sh efitools/efitool-mkusb
 		cd efitools && git tag | sort -V | tail -1 > efitools-version
+		make -C efitools install
 
 rpm-sbsigntools:
 		rpmdev-setuptree
