@@ -1,0 +1,4 @@
+Prequisites:
+dnf --enablerepo=PowerTools install gnu-efi
+dnf --enablerepo=PowerTools install gnu-efi-devel
+dnf --enablerepo=PowerTools install help2man

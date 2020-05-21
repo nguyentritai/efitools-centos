@@ -1,7 +1,8 @@
 
 # These targets build on each other. They are separated for easier readability.
 
-all: prepare-env build-sbsigntools build-efitools rpm-sbsigntools rpm-efitools
+#all: prepare-env build-sbsigntools build-efitools rpm-sbsigntools rpm-efitools
+all: prepare-env build-sbsigntools build-efitools
 
 prepare-env:
 		yum update -y
